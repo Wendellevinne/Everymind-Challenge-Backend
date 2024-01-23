@@ -17,8 +17,11 @@ public class Product implements Serializable {
 
     @Id
     private String code;
+
     private String name;
+
     private String description;
+
     private BigDecimal price;
 
 }
