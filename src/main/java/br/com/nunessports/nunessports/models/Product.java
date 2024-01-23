@@ -16,7 +16,6 @@ import java.math.BigDecimal;
 public class Product implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private String code;
     private String name;
     private String description;
