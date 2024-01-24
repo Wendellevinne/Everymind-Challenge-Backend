@@ -22,12 +22,14 @@ public class TestConfig implements CommandLineRunner {
     public void run(String... args) throws Exception {
 
         Product product1 = new Product(
+                null,
                 "00001",
                 "Tênis Olympikus",
                 "Tênis Olympikus",
                 BigDecimal.valueOf(400));
 
         Product product2 = new Product(
+                null,
                 "00002",
                 "Tênis Adidas",
                 "Tênis Adidas",
