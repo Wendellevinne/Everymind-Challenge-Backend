@@ -6,7 +6,7 @@ Essa aplicação realiza um CRUD simples, realizando a Criação, Leitura, Atual
 
 O back-end foi feito usando as tecnologias Java, Gradle e Spring. Estou utilizando o H2 como um banco de dados para o perfil de testes, e (pretendo utilizar) o PostgreSQL como SGBD para o perfil de produção.
 
-## Como realizar o deploy da aplicação
+## Como executar a aplicação
 
 Baixe ou copie o repositório para a sua máquina local, abra-o em uma IDE (Intellij IDEA, STS) ou editor de texto (VSCode) e rode o projeto como um projeto String.
 As operações podem ser realizadas acessando as seguintes rotas:
