@@ -13,19 +13,19 @@ O back-end foi feito usando as tecnologias Java, Gradle e Spring. Estou utilizan
 Baixe ou copie o repositório para a sua máquina local, abra-o em uma IDE (Intellij IDEA, STS) ou editor de texto (VSCode) e rode o projeto como um projeto String.
 As operações podem ser realizadas acessando as seguintes rotas:
 
-*Retorna uma lista com todos os produtos na base de dados*
+*Retorna uma lista com todos os produtos na base de dados:*
 http://localhost:8080/api/v1/nunessports/products
 
-*Seleciona um produto dentre os presentes na base de dados. Requer que o id do produto seja passado na URL*
+*Seleciona um produto dentre os presentes na base de dados. Requer que o id do produto seja passado na URL:*
 http://localhost:8080/api/v1/nunessports/product/ {id do produto}
 
-*Cria um novo produto na base de dados. Os campos necessários são {code: String, name: String, description: String, price: number}*
+*Cria um novo produto na base de dados. Os campos necessários são {code: String, name: String, description: String, price: number}:*
 http://localhost:8080/api/v1/nunessports/registerProduct
 
-*Atualiza um produto existente na base de dados. Requer que o id do produto seja passado na URL. Os campos que podem ser atualizados são {code: String, name: String, description: String, price: number}*
+*Atualiza um produto existente na base de dados. Requer que o id do produto seja passado na URL. Os campos que podem ser atualizados são {code: String, name: String, description: String, price: number}:*
 http://localhost:8080/api/v1/nunessports/updateProduct/ {id do produto}
 
-*Deleta um produto existente na base de dados. Requer que o id do produto seja passado na URL*
+*Deleta um produto existente na base de dados. Requer que o id do produto seja passado na URL:*
 http://localhost:8080/api/v1/nunessports/deleteProduct/ {id do produto}
 
 ## Como realizar a integração entre os sistemas
