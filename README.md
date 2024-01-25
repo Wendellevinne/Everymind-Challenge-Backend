@@ -28,7 +28,7 @@ http://localhost:8080/api/v1/nunessports/deleteProduct/ {id do produto}
 
 ## Como realizar a integração entre os sistemas
 
-Basta rodar este e o sistema Everymind-Challenge-Frontend simultaneamente em uma mesma máquina. As rotas dos projetos já estão configuradas para integrarem entre si.
+Basta rodar este e o sistema Everymind-Challenge-Frontend simultaneamente em uma mesma máquina. As rotas dos projetos já estão configuradas para se integrarem.
 
 ## TO-DO LIST
 - Integrar PostgreSQL na aplicação;
