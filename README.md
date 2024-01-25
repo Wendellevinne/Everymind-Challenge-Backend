@@ -37,4 +37,5 @@ Basta rodar este e o sistema Everymind-Challenge-Frontend simultaneamente em uma
 - Tratar exceções nos métodos do CRUD;
 - Implementar testes unitários;
 - Criar uma documentação do Swagger para a aplicação;
+- Configurar um dockerfile para realizar o deploy da aplicação;
 - Talvez implementar um sistema de JWT para a aplicação.
