@@ -27,6 +27,7 @@ http://localhost:8080/api/v1/nunessports/updateProduct/ {id do produto}
 http://localhost:8080/api/v1/nunessports/deleteProduct/ {id do produto}
 
 ## TO-DO LIST
+- Integrar PostgreSQL na aplicação;
 - Tratar exceções nos métodos do CRUD;
 - Implementar testes unitários;
 - Criar uma documentação do Swagger para a aplicação;
