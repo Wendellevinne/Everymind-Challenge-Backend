@@ -8,6 +8,8 @@ O back-end foi feito usando as tecnologias Java, Gradle e Spring. Estou utilizan
 
 ## Como executar a aplicação
 
+**Pré-requisitos:** A máquina deve ter: JDK versão 17 ou acima, Gradle e uma IDE como Intellij IDEA ou VSCode instalados para funcionar.
+
 Baixe ou copie o repositório para a sua máquina local, abra-o em uma IDE (Intellij IDEA, STS) ou editor de texto (VSCode) e rode o projeto como um projeto String.
 As operações podem ser realizadas acessando as seguintes rotas:
 
