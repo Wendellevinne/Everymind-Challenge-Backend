@@ -3,6 +3,7 @@ package br.com.nunessports.nunessports.services;
 import br.com.nunessports.nunessports.models.Product;
 import br.com.nunessports.nunessports.models.UpdateProductRequest;
 import br.com.nunessports.nunessports.repositories.ProductRepository;
+import br.com.nunessports.nunessports.services.exceptions.ResourceNotFoundException;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -20,8 +21,8 @@ public class ProductService {
         return productRepository.findAll();
     }
 
-    public Optional<Product> getProductById(Long id){
-        return productRepository.findById(id);
+    public Product getProductById(Long id){
+        return productRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException(id));
     }
 
     public void registerProduct(Product product){
@@ -47,18 +48,14 @@ public class ProductService {
             throw new RuntimeException("NS_UP0002 - Não existe nenhum produto com esse código no banco de dados");
         }
 
-        Optional<Product> savedProduct = getProductById(id);
+        Product savedProduct = getProductById(id);
 
-        if(savedProduct.isEmpty()){
-            throw new RuntimeException("NS_UP0003 - Falha ao recuperar o produto");
-        }
+        savedProduct.setCode(newProduct.getCode());
+        savedProduct.setName(newProduct.getName());
+        savedProduct.setDescription(newProduct.getDescription());
+        savedProduct.setPrice(newProduct.getPrice());
 
-        savedProduct.get().setCode(newProduct.getCode());
-        savedProduct.get().setName(newProduct.getName());
-        savedProduct.get().setDescription(newProduct.getDescription());
-        savedProduct.get().setPrice(newProduct.getPrice());
-
-        productRepository.save(savedProduct.get());
+        productRepository.save(savedProduct);
 
     }
 

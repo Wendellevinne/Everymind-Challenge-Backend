@@ -26,9 +26,7 @@ public class ProductResource {
 
     @GetMapping("product/{id}")
     public ResponseEntity<Product> getProductById(@PathVariable Long id){
-        return productService.getProductById(id)
-                .map(product -> ResponseEntity.ok().body(product))
-                .orElse(ResponseEntity.notFound().build());
+        return ResponseEntity.ok().body(productService.getProductById(id));
     }
     @PostMapping("/registerProduct")
     @ResponseStatus(HttpStatus.CREATED)
