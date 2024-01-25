@@ -26,6 +26,10 @@ http://localhost:8080/api/v1/nunessports/updateProduct/ {id do produto}
 *Deleta um produto existente na base de dados. Requer que o id do produto seja passado na URL*
 http://localhost:8080/api/v1/nunessports/deleteProduct/ {id do produto}
 
+## Como realizar a integração entre os sistemas
+
+Basta rodar este e o sistema Everymind-Challenge-Frontend simultaneamente em uma mesma máquina. As rotas dos projetos já estão configuradas para integrarem entre si.
+
 ## TO-DO LIST
 - Integrar PostgreSQL na aplicação;
 - Tratar exceções nos métodos do CRUD;
